@@ -1,0 +1,28 @@
+{
+  "name": "react-closure-leak-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "measure": "npm run build && node scripts/measure.mjs",
+    "measure:dev": "node scripts/measure.mjs dev"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "oxlint": "^1.94.0",
+    "puppeteer-core": "^25.19.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.4.0"
+  }
+}
