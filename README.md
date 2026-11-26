@@ -25,6 +25,8 @@ npm run measure        # production build, measured in headless Chrome
 npm run measure:dev    # same against the dev server
 ```
 
+Tested with Node 26.8, Vite 8 and React 19.3.1.
+
 `measure` needs Google Chrome installed (set `CHROME_PATH` if it is not in the default macOS location).
 It clicks A and B in turn 10 times (or mounts/unmounts the chart 10 times), forces garbage collection
 through the DevTools protocol, and prints how many big objects are still alive.
